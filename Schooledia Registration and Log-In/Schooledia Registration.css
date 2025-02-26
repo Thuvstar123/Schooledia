@@ -1,0 +1,120 @@
+html{
+    user-select: none;
+}
+
+body{
+    background-color: #1abc9c;
+}
+
+input{
+    font-family: Reddit Mono;
+}
+
+.main_reg{
+    background-color: #1abc9c;
+    font-family: Reddit Mono;
+    text-align: center;
+}
+.main_reg input{
+    display: flex;
+    background-color: #1a8d76;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6%;
+    width: 20%;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+}
+.main_reg input:focus{
+    outline: none;
+}
+
+#toggle_mask{
+    position: fixed;
+    margin-left: 12%;
+    margin-top: -1.6%;
+    opacity: 60%;
+    transition: opacity 0.3s;
+}
+#toggle_mask:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: opacity 0.1s;
+}
+#toggle_mask:active{
+    opacity: 90%;
+}
+
+::placeholder{
+    padding: 5%;
+    color: #82d4c4;
+}
+.reg_list{
+    margin-top: 12%;
+}
+.registration_agreements{
+    display: flex;
+    accent-color: #36ddbc;
+    background-color: #1a8d76;
+    transition: opacity 0.3s;
+}
+.registration_agreements:hover{
+    opacity: 50%;
+    transition: opacity 0.1s;
+}
+.registration_agreements:active{
+    opacity: 30%;
+}
+.main_header{
+    margin-top: 3%;
+    background-color: #36ddbc;
+    font-family: Reddit Mono;
+    padding: 1.08%;
+    color: #0c4237;
+    user-select: none;
+}
+
+.register_account{
+    background-color: #0c4237;
+    border: none;
+    border-radius: 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    color: #82d4c4;
+    padding: 1%;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.register_account:hover{
+    cursor: pointer;
+    background-color: #156656;
+    transition: 0.2s;
+}
+.register_account:active{
+    background-color: #1a8d76;
+    color: #1abc9c;
+}
+
+.log_in_here{
+    text-decoration: none;
+    color: #0c4237;
+}
+.log_in_here:hover{
+    text-decoration: underline;
+}
+
+.invis_password{
+    opacity: 0%;
+}
+.invis_repeat_password{
+    opacity: 0%;
+}
+.agreed_to_agreements{
+    opacity: 0%;
+}

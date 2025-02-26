@@ -1,0 +1,98 @@
+html{
+    user-select: none;
+}
+
+body{
+    background-color: #1abc9c;
+}
+
+.main_login{
+    background-color: #1abc9c;
+    font-family: Reddit Mono;
+    text-align: center;
+}
+.main_login input{
+    display: inline-block;
+    background-color: #1a8d76;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6%;
+    width: 20%;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+}
+.main_login input:focus{
+    outline: none;
+}
+::placeholder{
+    padding: 5%;
+    color: #82d4c4;
+}
+.login_list{
+    margin-top: 12%;
+}
+
+.main_header{
+    margin-top: 3%;
+    background-color: #36ddbc;
+    font-family: Reddit Mono;
+    padding: 1.08%;
+    color: #0c4237;
+    user-select: none;
+    margin-left: auto;
+}
+
+.loginto_account{
+    background-color: #0c4237;
+    border: none;
+    border-radius: 7px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    color: #82d4c4;
+    padding: 1%;
+    transition: 0.5s;
+    font-weight: bold;
+}
+.loginto_account:hover{
+    cursor: pointer;
+    background-color: #156656;
+    transition: 0.2s;
+}
+.loginto_account:active{
+    background-color: #1a8d76;
+    color: #1abc9c;
+}
+
+.inexistant{
+    visibility: hidden;
+}
+
+.register_here{
+    text-decoration: none;
+    color: #0c4237;
+}
+.register_here:hover{
+    text-decoration: underline;
+}
+
+#toggle_mask{
+    position: fixed;
+    margin-left: 12%;
+    margin-top: -1.6%;
+    opacity: 60%;
+    transition: opacity 0.3s;
+}
+#toggle_mask:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: opacity 0.1s;
+}
+#toggle_mask:active{
+    opacity: 90%;
+}

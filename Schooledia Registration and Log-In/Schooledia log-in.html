@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Schooledia log-in.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In · Schooledia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Webpage Icon/favicon-16x16.png">
+</head>
+<body>
+    <div class="main_login">
+        <h1 class="main_header">Schooledia</h1>
+        <ul class="login_list">
+            <div class="username_section" id="username_section">
+                <input type="text" placeholder="Enter username: " autocomplete="off" class="username" id="username">
+            </div>
+            <div class="password_section" id="password_section">
+              <input type="password" placeholder="Enter a password: " autocomplete="off" class="password" id="password">
+            </div>
+            <img src="imgs/hide_password.png" style="width: 1.5%;" class="hide_password" id="toggle_mask" onclick="toggle_mask()">
+            <button class="loginto_account" onclick="login_verification()">Log in</button>
+            <div id = "inexistant" class = "inexistant" >Incorrect username or password...</div>
+            <p>If you do not have an account, <a href="Schooledia Registration.html" class="register_here">register here</a> </p>
+        </ul>
+    </div>
+    <script src="login_input_validation.js"></script>
+</body>
+</html>
+
+<!--
+TO-DO:
+
+-->

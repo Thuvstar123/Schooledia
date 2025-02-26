@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register · Schooledia</title>
+    <link rel="stylesheet" href="Schooledia Registration.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="Webpage Icon/favicon-16x16.png">
+</head>
+<body>
+    <div class="main_reg">
+        <h1 class="main_header">Schooledia</h1>
+        <ul class="reg_list">
+            <div class="username_section" id="username_section">
+                <input type="text" autocomplete="off" placeholder="Enter username: " id="username">
+            </div>
+            <div id="email_section">
+                <input type="text" autocomplete="off" placeholder="Enter your school email: " id="school_email">
+            </div>
+            <span class="password_section" id="password_section">
+                <input autocomplete="off" type="password" placeholder="Enter a password: " class="password" id="password">
+                <input autocomplete="off" type="password" placeholder="Repeat password: " class="repeat_password" id="repeat_password">
+            </span>
+            <img src="imgs/hide_password.png" style="width: 1.5%;" class="hide_password" id="toggle_mask" onclick="toggleMask()">
+            <div id="agreements_section" class="agreements_section">
+                <input type="checkbox" id="agreements" class="registration_agreements">
+                <label for="agreements">I confirm that the information above belongs to solely me</label>
+            </div>
+            <button class="register_account" id="register_account" onclick="registration_verification()">Register</button>
+            <p>If you already have an account, <a href="schooledia log-in.html" class="log_in_here">log in here</a> </p>
+        </ul>
+    </div>
+    <script src="registration_input_validation.js"></script>
+</body>
+</html>
+
+<!--
+To Do:
+
+Append username and password to a list
+--------------------------------------
+>> Add email to list of emails
+>> OPTIONAL - When you have an incorrectly formatted email address, delete the email address and register again, 
+both the format error and the null error appears.
+--------------------------------------
+Enter the schooledia site
+-->
