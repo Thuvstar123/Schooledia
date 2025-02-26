@@ -12,3 +12,7 @@ This project was to make me able to improve my coding proficiency in Python and 
 # Function
 By using the Websocket modules, async/await functions and promises in JavaScript and Python, I was able to create a Client-Server system efficiently. While doing this, I also developed some of my proficiency in HTML, CSS and how to style and design websites, inspired by the turqoise seasides and minimalist theme, I combined the two to produce Schooledia.
 I used text files as a database, though we know we can simply just learn and use databases from other software, like SQL. This was simply an attempt to understand how databases function, to some depth.
+
+# Potential Errors
+When using the program make sure to replace "192.168.x.x" to the IP Address of the server.
+Any occurances of ".../Schooledia.." needs to be replaced with the actual file path of that specified file.
