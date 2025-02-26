@@ -1,0 +1,218 @@
+/*
+---------Globalised styling----------
+*/
+div{
+    font-family: Reddit Mono;
+}
+
+hr{
+    border-color: #1abc9c;
+    margin-top: 1%;
+}
+
+body{
+    flex-grow: 1;
+    padding: 1.064166666%;
+    background-color: #1a8d76; /* Main content background color */
+    box-sizing: border-box;
+    user-select: none;
+}
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #125245;
+    padding: 0.75%;
+    font-family: Reddit Mono;
+    margin-left: auto;
+    display: flex;
+    margin-right: 2%;
+    transition: 0.4s;
+    width: 10%;
+    text-align: center;
+    justify-content: center;
+}
+button:hover{
+    color: #28d1af;
+    background-color: #1a8d76;
+    cursor: pointer;
+}
+button:active{
+    color: #2affd4;
+    background-color: #125245;
+}
+
+/*
+-----------Title------------
+*/
+.header {
+    padding-left: 1.2%;
+    padding-top: 0.34%;
+    padding-bottom: 0.34%;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: Reddit Mono;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+
+.schooledia_link{
+    color: white;
+    transition: color 0.4s;
+    user-select: none;
+    text-decoration: none;
+}
+.schooledia_link:hover{
+    color: #1a8d76;
+    cursor: pointer;
+}
+.schooledia_link:active{
+    color: #125245;
+}
+
+/*
+----------------------
+---------body---------
+----------------------
+*/
+
+.resultsrequestContainer{
+    display: flex;
+}
+
+.friend_name_input{
+    margin-top: 75px;
+    width: 45%;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1abc9c;
+    margin-left: 2%;
+}
+
+.friend_name_input::placeholder{
+    color: #125245;
+}
+
+input{
+    outline: none;
+    padding-left: 1.5%;
+    font-family: Reddit Mono;
+}
+
+.search{
+    width: 1.6%;
+    position: fixed;
+    margin-top: 4.24%;
+    margin-left: 1%;
+    opacity: 40%;
+    transition: opacity 0.4s;
+}
+.search:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+.search:active{
+    opacity: 80%;
+}
+
+/*
+----RESULTS-----
+*/
+
+.result{
+    margin-left: 2%;
+    margin-top: 1%;
+    border-radius: 5px;
+    width: 55%;
+    height: 650px;
+    background-color: #50d4ba;
+    overflow-y: scroll;
+    overflow-wrap: anywhere;
+    overflow-x: hidden;
+}
+
+.result::-webkit-scrollbar{
+    color: #104238;
+    background-color: #1a8d76;
+    border: 1px solid #ffffff;
+    border-color: #16574a;
+}
+.result::-webkit-scrollbar-thumb{
+    background-color: #186d5c;
+    border-color: #196b5b;
+}
+
+.user_list{
+    padding-top: 2%;
+    display: block;
+}
+.user_list hr{
+    margin-right: 2%;
+}
+
+.requests{
+    margin-left: 10%;
+    margin-top: 1%;
+    border-radius: 5px;
+    width: 30%;
+    height: 650px;
+    background-color: #50d4ba;
+    overflow-y: scroll;
+    overflow-wrap: anywhere;
+    overflow-x: hidden;
+}
+
+.requests::-webkit-scrollbar{
+    color: #104238;
+    background-color: #1a8d76;
+    border: 1px solid #ffffff;
+    border-color: #16574a;
+}
+.requests::-webkit-scrollbar-thumb{
+    background-color: #186d5c;
+    border-color: #196b5b;
+}
+
+.user_list{
+    padding-top: 2%;
+}
+.user_list hr{
+    margin-right: 2%;
+}
+
+/*--------
+Requests
+--------*/
+
+.requestsHeader{
+    margin-top: 4%;
+    margin-left: 4%;
+    font-size: larger;
+}
+
+.requestsList hr{
+    margin-right: 2%;
+}
+
+.request-buttons {
+    display: flex;
+}
+
+.requestsList button{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 30px;
+    height: 100%;
+    gap: 10px;
+}

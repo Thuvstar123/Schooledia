@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account · Schooledia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="schooledia_account.css">
+    <link rel="icon" href="Webpage Icon/favicon-16x16.png">
+</head>
+<body class="lounge">
+    <div class="header">
+        <h1 class="schooledia_header"><a href="schooledia.html" class="schooledia_link">Schooledia</a></h1> 
+    </div>
+    <div class="container">
+        <button class="logout" id="logout" onclick="logout()">
+            Log out
+        </button>
+        <button class="terminate_account" id="terminate_account" onclick="showTermination()">
+            Terminate Account
+        </button>
+        <div class="confirmDivs" id="confirmDivs">
+            <div id="confirm_termination" class="confirm_termination">
+                <input type="checkbox" class="confirm_checkbox" id="confirm_checkbox"> <label for="confirm_checkbox">I agree that all my data will be deleted, though my message history may be saved for investigative purposes</label>
+            </div>
+            <div id="checkbox_error" class="checkbox_error">You have not complied to this statement</div>
+            <div id="password_button" class="password_button">
+                <div id="password_input">
+                    <input type="password" autocomplete="off" id="password" class="password" placeholder="Enter your password">
+                    <div class="password_error" id="password_error">The password you have entered is incorrect</div>
+                </div>
+                <div class="button_container" id="button_container">
+                    <button id="enter_password" class="enter_password" onclick="terminateAccount()">Terminate</button>
+                    <button id="cancel_termination" onclick="cancelTermination()">Cancel</button>
+                    <img src="imgs/hide_password.png" class="password_visibility" id="password_visibility" onclick="checkMask()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="true_password" style="visibility: hidden;"></p>
+    <p id="username" style="visibility: hidden;"></p>
+    <p id="upk" style="visibility: hidden;"></p>
+    <script src="schooledia_account.js"></script>
+</body>
+</html>

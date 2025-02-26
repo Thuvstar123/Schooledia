@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report · Schooledia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="schooledia_report.css">
+    <link rel="icon" href="Webpage Icon/favicon-16x16.png">
+</head>
+<body class="lounge">
+    <div class="header">
+        <h1 class="schooledia_header"><a href="schooledia.html" class="schooledia_link">Schooledia</a></h1> 
+    </div>
+    <div class="report_section" id="report_section">
+        <div class="username_section" id="username_section">
+            <input type="text" class="enter_username" id="enter_username" autocomplete="off" placeholder="Enter username to report">
+        </div>
+        <div class="options_section" id="options_section">
+            <select class="report_abuse" id="report_options">
+                <option value="select">Select</option>
+                <option value="cyberbullying_bullying">CyberBullying/Bullying</option>
+                <option value="inappropriate_language">Inappropriate Language</option>
+                <option value="sexting">Sexting</option>
+                <option value="threats">Threats</option>
+                <option value="hate_speech">Hate Speech</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <textarea placeholder="Additional information" class="extra_information" id="extra_information"></textarea>
+        </div>
+        <button class="submit" id="submit" onclick="report_verification()">Submit</button>
+        <div class = "reportSubmitted" id = "reportSubmitted">Report has been submitted</div>
+    </div>
+    <script src="school_report.js"></script>
+</body>
+</html>

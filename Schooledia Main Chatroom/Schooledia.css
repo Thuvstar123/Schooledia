@@ -1,0 +1,295 @@
+/*
+---------Globalised styling----------
+*/
+div{
+    font-family: Reddit Mono;
+}
+
+hr{
+    border-color: #1abc9c;
+}
+
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+/*
+-----------Title------------
+*/
+.header {
+    padding-left: 1.2%;
+    padding-top: 0.34%;
+    padding-bottom: 0.34%;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: Reddit Mono;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+
+.schooledia_header{
+    color: white;
+    transition: color 0.4s;
+    user-select: none;
+}
+.schooledia_header:hover{
+    color: #125245;
+    cursor: pointer;
+}
+
+/*
+----------Navigation---------
+*/
+.chatroom_menu {
+    width: 100%;
+    background-color: #104238; /* Background color for navigation */
+    color: white;
+    padding: 1%;
+    margin-top: 0.74111%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    border-radius: 5px;
+    height: 770px;
+    margin-left: 0.74111%;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 1.0461111%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.chatroom_menu::-webkit-scrollbar{
+    color: #104238;
+    background-color: #1a8d76;
+    border: 1px solid #ffffff;
+    border-color: #16574a;
+}
+.chatroom_menu::-webkit-scrollbar-thumb{
+    background-color: #186d5c;
+    border-color: #196b5b;
+}
+
+.chatroom_list div{
+    margin-top: 3%;
+    font-weight: normal;
+    transition: color 0.4s;
+    border-bottom: #1abc9c;
+}
+.chatroom_list div:hover{
+    cursor: pointer;
+    color: #1abc9c;
+}
+.chatroom_list div:active{
+    transition: color 0.4s;
+    color: #1a8d76;
+}
+
+.menu{
+    width: 2.3%;
+    padding-right: auto;
+    padding-top: 0.34%;
+    padding-bottom: 0.34%;
+    padding-left: 2%;
+    transition: opacity 0.5s;
+}
+.menu:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+.menu:active{
+    opacity: 30%;
+}
+.menu_status{
+    visibility: hidden;
+}
+
+.menu_options{
+    margin: 0px;
+    padding-left: 83%;
+    transition: opacity 0.3s;
+    opacity: 0%;
+    user-select: none;
+}
+
+.menu_options a{
+    padding-top: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.friends{
+    cursor: default;
+    transition: color 0.4s;
+}
+.report{
+    cursor: default;
+    transition: color 0.4s;
+}
+.account{
+    cursor: default;
+    transition: color 0.4s;
+}
+
+.friends:hover{
+    color: #125245;
+}
+.report:hover{
+    color: #125245;
+}
+.account:hover{
+    color: #125245;
+}
+
+.friends:active{
+    color: #48b39d;
+}
+.report:active{
+    color: #48b39d;
+}
+.account:active{
+    color: #48b39d;
+}
+
+/*
+----------------------
+---------body---------
+----------------------
+*/
+.lounge {
+    flex-grow: 1;
+    padding: 1.064166666%;
+    background-color: #1a8d76; /* Main content background color */
+    box-sizing: border-box;
+}
+
+.chatroom_title{
+    font-family: Reddit Mono;
+    padding-left: 1.0416666666%;
+    font-size: 20px;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+}
+
+.chat_box{
+    padding-top: 1.58%;
+    border: #125245;
+    width: 1300px;
+    height: 89.8%;
+    background-color: #82d4c4;
+    display: flex;
+    margin-right: 0;
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+.chat_box div{
+    margin-right: 4.230769231%;
+    border-radius: 3px;
+    padding: 2px;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: inline-block;
+}
+
+.chat_list{
+    overflow-y: scroll; 
+    height: 600px;
+    width: 1300px;
+    overflow-x: hidden;
+}
+.chat_list::-webkit-scrollbar{
+    color: #104238;
+    background-color: #1a8d76;
+    border: 1px solid #ffffff;
+    border-color: #16574a;
+}
+.chat_list::-webkit-scrollbar-thumb{
+    background-color: #186d5c;
+    border-color: #196b5b;
+}
+.chat_list hr{
+    border-color: #609b8f;
+    opacity: 20%;
+    margin-right: 1.2%;
+}
+
+.chat_list div{
+    background-color: #1a8d76;
+    padding: 0.8%;
+    width: 95%;
+}
+
+.chatlist hr{
+    border-color: #005544;
+}
+
+
+.active_users{
+    padding-top: 0.82%;
+    padding-left: 1.38125%;
+    background-color: #125245;
+    border-radius: 5px;
+    padding: 0.82%;
+    margin-top: 0.3%;
+}
+
+/*
+---------INPUTS---------
+*/
+input{
+    padding-left: 2%;
+    outline: none;
+}
+
+.text_input{
+    border: none;
+    border-radius: 7px;
+    margin-left: 3.7692%;
+    margin-top: 33.5%;
+    width: 52.083333%;
+    height: 3.5%;
+    display: inline-block;
+    padding-left: 1%;
+    font-family: Reddit Mono;
+    position: fixed;
+}
+
+::placeholder{
+    color: #82d4c4;
+    font-family: Reddit Mono;
+}
+
+.send_image{
+    border: none;
+    border-radius: 7px;
+    margin-left: 57.6875%;
+    margin-top: 33.5%;
+    display: block;
+    padding-left: 1%;
+    user-select: none;
+    position: fixed;
+    transition: 0.4s;
+    opacity: 50%;
+    transform: rotate(-35deg);
+}
+.send_image:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.send_image:active{
+    opacity: 100%;
+}
+
+.activeFriends{
+    color: #1abc9c;
+}

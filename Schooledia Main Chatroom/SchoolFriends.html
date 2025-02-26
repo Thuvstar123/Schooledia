@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends · Schooledia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="schooledia_friends.css">
+    <link rel="icon" href="Webpage Icon/favicon-16x16.png">
+</head>
+<body class="lounge">
+    <div class="header">
+        <h1 class="schooledia_header"><a href="schooledia.html" class="schooledia_link">Schooledia</a></h1> 
+    </div>
+    <div class="container">
+        <div class="friend_name">
+            <input type="text" class="friend_name_input" id="friend_name_input" autocomplete="off" placeholder="Enter username..."> 
+            <img src="imgs/Search.png" class="search" id="search" onclick="findUsers()">
+        </div>
+        <div class="resultsrequestContainer">
+            <div class="result">
+                <ul id="user_list" class="user_list">
+                </ul>
+            </div>
+            <div class="requests">
+                <header class="requestsHeader">Requests</header>
+                <ul id="requestsList" class="requestsList">
+                    <!--<div>Burger <button class="accept"><img src="imgs/Accept.png" class="acceptImg"></button> <button class="deny"><img src="imgs/Reject.png" class="rejectImg"></button></div>
+                    <hr>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="username" style="visibility: hidden;"></div>
+<script src="schooledia_friends.js"></script>
+</body>
+</html>

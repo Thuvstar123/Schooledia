@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="main">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schooledia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="schooledia.css">
+    <link rel="icon" href="Webpage Icon/favicon-16x16.png">
+</head>
+<body class="lounge">
+    <div class="header">
+        <h1 class="schooledia_header">Schooledia</h1> 
+        <ul class="menu_options" id="menu_options">
+            <a class="friends" id="friends" href="schooledia_friends.html">Friends</a>
+            <a class="report" id="report" href="schooledia_report.html" >Report</a>
+            <a class="account" id="account" href="schooledia_account.html">Account</a>
+        </ul>
+        <img src="https://static.thenounproject.com/png/4659785-200.png" class="menu" id="menu" onclick="menu_options_appear()">
+        <p class="menu_status" id="menu_status">hidden</p>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2 class="chatroom_title" id="chatroom_title"></h2>
+            <div class="chat_box" id="chat_box">
+                <ul class="chat_list" id="chat_list">
+                </ul>
+                <input type="text" id="text_input" class="text_input" placeholder="Enter message..." style="background-color: #1a8d76;">
+                <img src="imgs/sendMessage.png" style="width: 1.58333%; height: 3.8%;" class="send_image" id="send_button" onclick="messageSend()">
+            </div>
+            <div class="active_users" id="active_users">
+                <span style="color: white;">Active Users: </span> <span class="activeFriends" id="activeFriends"></span>
+            </div>
+        </div>
+        <div class="chatroom_menu">
+            Chatrooms
+            <ul class="chatroom_list" id="chatroom_list">
+                
+            </ul>
+        </div>
+    </div>
+    <p id="upk" class="upk" style="visibility: hidden;"></p>
+    <p id="username" class="username" style="visibility: hidden;"></p>
+    <script src="schooledia.js"></script>
+</body>
+</html>

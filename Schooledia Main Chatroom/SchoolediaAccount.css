@@ -1,0 +1,176 @@
+/*
+---------Globalised styling----------
+*/
+
+body{
+    flex-grow: 1;
+    padding: 1.064166666%;
+    background-color: #1a8d76; /* Main content background color */
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    background-color: #1abc9c;
+    color: #125245;
+    padding: 0.75%;
+    font-family: Reddit Mono;
+    display: flex;
+    margin-top: 1%;
+    transition: 0.4s;
+}
+button:hover{
+    color: #28d1af;
+    background-color: #1ea78b;
+    cursor: pointer;
+}
+button:active{
+    color: #2affd4;
+    background-color: #125245;
+}
+
+label{
+    color: #012c24;
+    font-family: Reddit Mono;
+}
+
+.confirm_checkbox{
+    accent-color: #36ddbc;
+    background-color: #1a8d76;
+    transition: opacity 0.3s;
+}
+.confirm_checkbox:hover{
+    opacity: 50%;
+    transition: opacity 0.1s;
+}
+.confirm_checkbox:active{
+    opacity: 30%;
+}
+
+.confirm_termination{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.password{
+    display: flex;
+    background-color: #1abc9c;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6%;
+    width: 20%;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    font-family: Reddit Mono;
+    border: none;
+    outline: none;
+}
+
+.password::placeholder{
+    color: #125245;
+}
+
+.button_container{
+    display: flex;
+    gap: 2%;
+}
+
+.enter_password{
+    margin-right: 0%;
+    margin-left: 44%;
+}
+
+.cancel_termination{
+    margin-left: 30%;
+    margin-right: auto;
+}
+
+.terminate_account{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmDivs{
+    visibility: hidden;
+}
+
+/*
+-----------Title------------
+*/
+
+.header {
+    padding-left: 1.2%;
+    padding-top: 0.34%;
+    padding-bottom: 0.34%;
+    text-align: left;
+    background: #1abc9c;
+    color: white;
+    font-size: 15px;
+    font-family: Reddit Mono;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+
+.schooledia_link{
+    color: white;
+    transition: color 0.4s;
+    user-select: none;
+    text-decoration: none;
+}
+.schooledia_link:hover{
+    color: #1a8d76;
+    cursor: pointer;
+}
+.schooledia_link:active{
+    color: #125245;
+}
+
+.logout{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.password_visibility{
+    opacity: 60%;
+    transition: opacity 0.3s;
+    height: 30px;
+    margin-top: 1.4%;
+}
+.password_visibility:hover{
+    cursor: pointer;
+    opacity: 80%;
+    transition: opacity 0.1s;
+}
+.password_visibility:active{
+    opacity: 90%;
+}
+
+.password_error{
+    display: flex;
+    font-family: Reddit Mono;
+    visibility: hidden;
+    justify-content: center;
+}
+
+.checkbox_error{
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    font-family: Reddit Mono;
+    margin-top: 0.5%;
+}
